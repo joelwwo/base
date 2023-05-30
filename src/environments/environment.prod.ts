@@ -4,6 +4,7 @@ import { global } from 'src/core/settings/global';
 
 const name: TEnvironmentName = 'prod';
 export const environment: IEnvironment = {
+  name,
   production: false,
   urlBase: global[name].urlBase,
   urlBrazilianGeography: global[name].urlBrazilianGeography,

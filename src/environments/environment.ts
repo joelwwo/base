@@ -6,6 +6,7 @@ import { global } from 'src/core/settings/global';
 import { TEnvironmentName } from 'src/core/types/TEnvironmentName';
 const name: TEnvironmentName = 'prod';
 export default {
+  name,
   production: false,
   urlBase: global[name].urlBase,
   urlBrazilianGeography: global[name].urlBrazilianGeography,
