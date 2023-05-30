@@ -1,10 +1,10 @@
+const defaulValues = {
+  urlBase: '',
+  urlBrazilianGeography: 'http://educacao.dadosabertosbr.com/api/',
+};
+
 export const global = {
-  dev: {
-    urlBase: '',
-    urlBrazilianGeography: 'http://educacao.dadosabertosbr.com/api/',
-  },
-  prod: {
-    urlBase: '',
-    urlBrazilianGeography: 'http://educacao.dadosabertosbr.com/api/',
-  },
+  dev: defaulValues,
+  prod: defaulValues,
+  hml: defaulValues,
 };

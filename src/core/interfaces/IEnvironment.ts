@@ -1,7 +1,8 @@
 import { TEnvironmentName } from '../types/TEnvironmentName';
 
 export interface IEnvironment {
-  name: TEnvironmentName;
+  environmentName: TEnvironmentName;
+  appName: string;
   production: boolean;
   urlBase: string;
   urlBrazilianGeography: string;

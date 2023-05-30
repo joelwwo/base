@@ -5,13 +5,14 @@
 import { IEnvironment } from 'src/core/interfaces/IEnvironment';
 import { global } from 'src/core/settings/global';
 import { TEnvironmentName } from 'src/core/types/TEnvironmentName';
-const name: TEnvironmentName = 'prod';
+const environmentName: TEnvironmentName = 'prod';
 
 export const environment: IEnvironment = {
-  name,
+  environmentName,
+  appName: 'Dashboard',
   production: false,
-  urlBase: global[name].urlBase,
-  urlBrazilianGeography: global[name].urlBrazilianGeography,
+  urlBase: global[environmentName].urlBase,
+  urlBrazilianGeography: global[environmentName].urlBrazilianGeography,
 };
 
 /*

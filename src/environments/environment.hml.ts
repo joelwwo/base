@@ -1,8 +1,8 @@
 import { IEnvironment } from 'src/core/interfaces/IEnvironment';
-import { TEnvironmentName } from './../core/types/TEnvironmentName';
+import { TEnvironmentName } from '../core/types/TEnvironmentName';
 import { global } from 'src/core/settings/global';
 
-const environmentName: TEnvironmentName = 'prod';
+const environmentName: TEnvironmentName = 'hml';
 export const environment: IEnvironment = {
   environmentName,
   appName: 'Dashboard',
