@@ -2,8 +2,13 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
+import { global } from 'src/core/settings/global';
+import { TEnvironmentName } from 'src/core/types/TEnvironmentName';
+const name: TEnvironmentName = 'prod';
+export default {
+  production: false,
+  urlBase: global[name].urlBase,
+  urlBrazilianGeography: global[name].urlBrazilianGeography,
 };
 
 /*
