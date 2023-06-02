@@ -7,9 +7,11 @@ import { TUnicodeLocaleId } from 'src/core/types/TUnicodeLocaleId';
 export class SettingsService {
   private unicodeLocaleId: TUnicodeLocaleId = 'pt-BR';
 
-  constructor() {}
-
   getUnicodeLocaleId(): string {
     return this.unicodeLocaleId;
+  }
+
+  setUnicodeLocaleId(unicodeLocaleId: TUnicodeLocaleId): string {
+    return (this.unicodeLocaleId = unicodeLocaleId);
   }
 }
